@@ -1,11 +1,78 @@
+:root {
+  --branding-color: #66aaea;
+  --heading-font-family: "Oswald", serif;
+  --default-font-family: "Quicksand", serif;
+  --secondary-color: #6be1d5;
+}
 body {
-  color: black;
+  font-family: var(--default-font-family);
 }
-
 h1 {
-  font-family: "Oswald", serif;
+  font-family: var(--heading-font-family);
+  color: #fff;
+  font-size: 96px;
+  font-weight: 200;
+}
+p {
+  font-family: var(--default-font-family);
+  color: #000;
 }
 
-p {
-  font-family: "Quicksand", serif;
+h1,
+h2 {
+  text-align: center;
+  margin: auto;
+}
+
+.hero {
+  background-color: hsla(259.4117647058824, 100%, 63%, 1);
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 1162 1162' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E"),
+    radial-gradient(
+      circle at 15% 85%,
+      hsla(209.09090909090907, 75%, 65%, 1) 19%,
+      transparent 84%
+    ),
+    radial-gradient(
+      circle at 31% 1%,
+      hsla(161.47058823529412, 99%, 84%, 1) 12%,
+      transparent 85%
+    ),
+    radial-gradient(
+      circle at 30% 27%,
+      hsla(305.34653465346537, 89%, 77%, 1) 14%,
+      transparent 90%
+    ),
+    radial-gradient(
+      circle at 88% 87%,
+      hsla(163, 90%, 78%, 1) 3.6400864520532363%,
+      transparent 75.20902830975928%
+    );
+  background-blend-mode: overlay, normal, normal, normal, normal;
+  text-align: center;
+  padding: 100px 20px;
+}
+.hero p {
+  font-size: 30px;
+  color: #fff;
+  margin-bottom: -15px;
+}
+.main-heading {
+  text-transform: uppercase;
+}
+
+.hero h2 {
+  color: #fff;
+  font-size: 24px;
+}
+
+.btn-branding {
+  border: 1px solid #fff;
+  border-radius: 25px;
+  color: #fff;
+  font-size: 16px;
+  padding: 10px 15px;
+}
+
+.btn-branding:hover {
+  color: #fff;
 }
