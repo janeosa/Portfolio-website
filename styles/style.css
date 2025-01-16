@@ -1,5 +1,5 @@
 :root {
-  --branding-color: #66aaea;
+  --branding-color: #79befe;
   --heading-font-family: "Oswald", serif;
   --default-font-family: "Quicksand", serif;
   --secondary-color: #6be1d5;
@@ -12,18 +12,23 @@ h1 {
   color: #fff;
   font-size: 96px;
   font-weight: 200;
+  line-height: 1.5;
 }
 p {
   font-family: var(--default-font-family);
   color: #000;
+  line-height: 30px;
 }
 
 h1,
 h2 {
-  text-align: center;
   margin: auto;
 }
-
+h2 {
+  font-family: var(--heading-font-family);
+  font-size: 60px;
+  font-weight: 200;
+}
 .hero {
   background-color: hsla(259.4117647058824, 100%, 63%, 1);
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 1162 1162' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E"),
@@ -56,9 +61,6 @@ h2 {
   color: #fff;
   margin-bottom: -15px;
 }
-.main-heading {
-  text-transform: uppercase;
-}
 
 .hero h2 {
   color: #fff;
@@ -71,8 +73,63 @@ h2 {
   color: #fff;
   font-size: 16px;
   padding: 10px 15px;
+  text-decoration: none;
+  transition: all 100ms ease-in-out;
 }
 
 .btn-branding:hover {
   color: #fff;
+  border: none;
+}
+.btn-paragraph {
+  border: 1px solid var(--branding-color);
+  border-radius: 25px;
+  color: var(--branding-color);
+  font-size: 16px;
+  padding: 10px 15px;
+  text-decoration: none;
+  transition: all 100ms ease-in-out;
+}
+.btn-paragraph:hover {
+  color: var(--branding-color);
+  border: none;
+}
+.capabilities {
+  background-color: #79befe;
+  border-radius: 25px;
+  color: #fff;
+  font-size: 16px;
+  padding: 10px 15px;
+}
+.project-section {
+  padding: 20px 30px;
+  margin-top: 50px;
+}
+.sub-bar {
+  background-color: var(--branding-color);
+  padding: 10px 0 1px 0;
+}
+
+.sub-bar p {
+  color: #fff;
+}
+.sub-heading {
+  font-family: var(--default-font-family);
+}
+
+@media (max-width: 960px) {
+  h1 {
+    font-size: 54px;
+    margin: 15px 0 5px 0;
+  }
+  h2 {
+    font-size: 50px;
+  }
+  .project-description {
+    text-align: center;
+  }
+  .capabilities {
+    font-size: 12px;
+    line-height: 38px;
+  }
 }
