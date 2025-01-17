@@ -2,10 +2,11 @@
   --branding-color: #79befe;
   --heading-font-family: "Oswald", serif;
   --default-font-family: "Quicksand", serif;
-  --secondary-color: #6be1d5;
+  --secondary-color: #b2daff;
 }
 body {
   font-family: var(--default-font-family);
+  background-color: var(--secondary-color);
 }
 h1 {
   font-family: var(--heading-font-family);
@@ -28,6 +29,12 @@ h2 {
   font-family: var(--heading-font-family);
   font-size: 60px;
   font-weight: 200;
+}
+a {
+  color: #fff;
+}
+a:hover {
+  text-decoration: none;
 }
 .hero {
   background-color: hsla(259.4117647058824, 100%, 63%, 1);
@@ -59,7 +66,7 @@ h2 {
 .hero p {
   font-size: 30px;
   color: #fff;
-  margin-bottom: -15px;
+  margin: 20px 0 -15px 0;
 }
 
 .hero h2 {
@@ -95,11 +102,17 @@ h2 {
   border: none;
 }
 .capabilities {
-  background-color: #79befe;
+  background-color: var(--branding-color);
   border-radius: 25px;
   color: #fff;
   font-size: 16px;
   padding: 10px 15px;
+}
+.navbar {
+  transition: all 0.5s;
+}
+.navbar-scrolled {
+  background-color: var(--secondary-color);
 }
 .project-section {
   padding: 20px 30px;
@@ -116,7 +129,9 @@ h2 {
 .sub-heading {
   font-family: var(--default-font-family);
 }
-
+.social-link:hover {
+  color: var(--secondary-color);
+}
 @media (max-width: 960px) {
   h1 {
     font-size: 54px;
