@@ -6,7 +6,7 @@
 }
 body {
   font-family: var(--default-font-family);
-  background-color: var(--secondary-color);
+  background-color: #fff;
 }
 h1 {
   font-family: var(--heading-font-family);
