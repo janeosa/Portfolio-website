@@ -134,6 +134,9 @@ a:hover {
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
+.footer-link a {
+  color: var(--branding-color);
+}
 .navbar {
   transition: all 0.5s;
 }
